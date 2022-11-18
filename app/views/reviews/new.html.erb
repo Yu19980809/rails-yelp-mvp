@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>New review</h1>
+
+  <%= simple_form_for @review do |f| %>
+    <div class="form-group mb-3">
+      <%= f.input :rating, collection: 0..5 %>
+    </div>
+    <div class="form-group mb-3">
+      <%= f.input :content, class: 'form-control' %>
+    </div>
+
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %>
+
+  <hr>
+  <%= link_to 'Back to list', restaurants_path, class: 'btn btn-primary' %>
+</div>

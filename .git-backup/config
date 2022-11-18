@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:Yu19980809/rails-yelp-mvp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[submodule "spec"]
+	url = git@github.com:lewagon/fullstack-challenges-03-Rails-restaurant-reviews-specs.git
+	active = true
